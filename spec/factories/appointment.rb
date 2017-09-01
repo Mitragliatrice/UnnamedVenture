@@ -1,8 +1,10 @@
 FactoryGirl.define do
-  factory :audit_log do
-    user
+  factory :appointment do
+    name 'Factory Girl'
+    phone '5555555555'
+    street '123 abc'
+    city 'LA'
+    state 'CA'
     status 0
-    start_date (Date.today - 6.days)
-    end_date nil
   end
 end

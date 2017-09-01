@@ -32,7 +32,8 @@ class AppointmentsController < ApplicationController
                                         :phone,
                                         :street,
                                         :city,
-                                        :state
+                                        :state,
+                                        :status
     )
   end
 end

@@ -4,9 +4,10 @@ Grant Barlow
 - Estimates Resources
   - Enum (:new, :contacted)
 - Appointments Resources 
-  - Name=string, phone=string, Street=string, city=string, state=string
-  - Enum (:new, :contacted)
-- Static Pages Controller
+  - X Name=string, phone=string, Street=string, city=string, state=string
+  - X Enum (:new, :contacted)
+  - Complete CRUD
+- X Static Pages Controller
 - Twilio Text Message on Request
 - Devise
 - Petergate
