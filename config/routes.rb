@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :appointments
   root to: 'static_pages#home'
 
   get 'home', to: 'static_pages#home'
