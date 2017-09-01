@@ -1,0 +1,109 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Currently listed:</strong>
+  <%= @estimate.currently_listed %>
+</p>
+
+<p>
+  <strong>Prop owner name:</strong>
+  <%= @estimate.prop_owner_name %>
+</p>
+
+<p>
+  <strong>Contact name:</strong>
+  <%= @estimate.contact_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @estimate.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @estimate.phone %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @estimate.street %>
+</p>
+
+<p>
+  <strong>Street2:</strong>
+  <%= @estimate.street2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @estimate.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @estimate.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @estimate.zip %>
+</p>
+
+<p>
+  <strong>Beds:</strong>
+  <%= @estimate.beds %>
+</p>
+
+<p>
+  <strong>Baths:</strong>
+  <%= @estimate.baths %>
+</p>
+
+<p>
+  <strong>Home sf:</strong>
+  <%= @estimate.home_sf %>
+</p>
+
+<p>
+  <strong>Prop sf:</strong>
+  <%= @estimate.prop_sf %>
+</p>
+
+<p>
+  <strong>Num garages:</strong>
+  <%= @estimate.num_garages %>
+</p>
+
+<p>
+  <strong>Pool:</strong>
+  <%= @estimate.pool %>
+</p>
+
+<p>
+  <strong>Spa:</strong>
+  <%= @estimate.spa %>
+</p>
+
+<p>
+  <strong>Upgrades:</strong>
+  <%= @estimate.upgrades %>
+</p>
+
+<p>
+  <strong>Damage:</strong>
+  <%= @estimate.damage %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @estimate.photo %>
+</p>
+
+<p>
+  <strong>Tod call:</strong>
+  <%= @estimate.tod_call %>
+</p>
+
+<%= link_to 'Edit', edit_estimate_path(@estimate) %> |
+<%= link_to 'Back', estimates_path %>

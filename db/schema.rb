@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170901070824) do
+ActiveRecord::Schema.define(version: 20170901072538) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,32 @@ ActiveRecord::Schema.define(version: 20170901070824) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "status"
+  end
+
+  create_table "estimates", force: :cascade do |t|
+    t.integer "currently_listed"
+    t.string "prop_owner_name"
+    t.string "contact_name"
+    t.string "email"
+    t.string "phone"
+    t.string "street"
+    t.string "street2"
+    t.string "city"
+    t.string "state"
+    t.bigint "zip"
+    t.integer "beds"
+    t.integer "baths"
+    t.bigint "home_sf"
+    t.bigint "prop_sf"
+    t.integer "num_garages"
+    t.integer "pool"
+    t.integer "spa"
+    t.text "upgrades"
+    t.text "damage"
+    t.text "photo"
+    t.text "tod_call"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

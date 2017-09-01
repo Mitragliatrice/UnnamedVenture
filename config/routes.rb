@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :estimates
   resources :appointments
   root to: 'static_pages#home'
 

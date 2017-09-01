@@ -1,0 +1,122 @@
+<%= form_with(model: estimate, local: true) do |form| %>
+  <% if estimate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estimate.errors.count, "error") %> prohibited this estimate from being saved:</h2>
+
+      <ul>
+      <% estimate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :currently_listed %>
+    <%= form.number_field :currently_listed, id: :estimate_currently_listed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prop_owner_name %>
+    <%= form.text_field :prop_owner_name, id: :estimate_prop_owner_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_name %>
+    <%= form.text_field :contact_name, id: :estimate_contact_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :estimate_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :estimate_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street %>
+    <%= form.text_field :street, id: :estimate_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street2 %>
+    <%= form.text_field :street2, id: :estimate_street2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :estimate_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :estimate_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip %>
+    <%= form.text_field :zip, id: :estimate_zip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beds %>
+    <%= form.text_field :beds, id: :estimate_beds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :baths %>
+    <%= form.text_field :baths, id: :estimate_baths %>
+  </div>
+
+  <div class="field">
+    <%= form.label :home_sf %>
+    <%= form.text_field :home_sf, id: :estimate_home_sf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prop_sf %>
+    <%= form.text_field :prop_sf, id: :estimate_prop_sf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_garages %>
+    <%= form.text_field :num_garages, id: :estimate_num_garages %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pool %>
+    <%= form.text_field :pool, id: :estimate_pool %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spa %>
+    <%= form.text_field :spa, id: :estimate_spa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upgrades %>
+    <%= form.text_area :upgrades, id: :estimate_upgrades %>
+  </div>
+
+  <div class="field">
+    <%= form.label :damage %>
+    <%= form.text_area :damage, id: :estimate_damage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.text_area :photo, id: :estimate_photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tod_call %>
+    <%= form.text_area :tod_call, id: :estimate_tod_call %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
