@@ -1,8 +1,8 @@
 ## Unnamed Venture
 Grant Barlow
 
-- Estimates Resources
-  - Enum (:new, :contacted)
+- X Estimates Resources
+  - X Enum (:new, :contacted)
 - Appointments Resources 
   - X Name=string, phone=string, Street=string, city=string, state=string
   - X Enum (:new, :contacted)

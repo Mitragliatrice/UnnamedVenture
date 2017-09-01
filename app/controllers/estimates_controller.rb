@@ -69,6 +69,26 @@ class EstimatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def estimate_params
-      params.require(:estimate).permit(:currently_listed, :prop_owner_name, :contact_name, :email, :phone, :street, :street2, :city, :state, :zip, :beds, :baths, :home_sf, :prop_sf, :num_garages, :pool, :spa, :upgrades, :damage, :photo, :tod_call)
+      params.require(:estimate).permit(:currently_listed, 
+                                      :prop_owner_name, 
+                                      :contact_name, 
+                                      :email, 
+                                      :phone, 
+                                      :street, 
+                                      :street2, :city, 
+                                      :state, 
+                                      :zip, 
+                                      :beds, 
+                                      :baths, 
+                                      :home_sf,
+                                      :prop_sf, 
+                                      :num_garages, 
+                                      :pool, 
+                                      :spa, 
+                                      :upgrades, 
+                                      :damage, 
+                                      :photo, 
+                                      :tod_call, 
+                                      :status)
     end
 end

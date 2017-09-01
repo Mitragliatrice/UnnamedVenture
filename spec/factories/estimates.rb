@@ -1,25 +1,24 @@
 FactoryGirl.define do
   factory :estimate do
-    currently_listed 1
-    prop_owner_name "MyString"
-    contact_name "MyString"
-    email "MyString"
-    phone "MyString"
-    street "MyString"
-    street2 "MyString"
-    city "MyString"
-    state "MyString"
-    zip ""
-    beds ""
-    baths ""
-    home_sf ""
-    prop_sf ""
-    num_garages ""
-    pool ""
-    spa ""
-    upgrades "MyText"
-    damage "MyText"
-    photo "MyText"
-    tod_call "MyText"
+    currently_listed 0
+    prop_owner_name "Donald"
+    contact_name "Trump"
+    email "estimate@test.com"
+    phone "5555555555"
+    street "123 abc"
+    street2 "suite 2b"
+    city "LA"
+    state "CA"
+    zip 80000
+    beds 10
+    baths 5
+    home_sf 500
+    prop_sf 1000
+    num_garages 1
+    pool 0
+    spa 0
+    upgrades "None"
+    damage "None"
+    tod_call "Any"
   end
 end

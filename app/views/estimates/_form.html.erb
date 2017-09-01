@@ -12,8 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :currently_listed %>
-    <%= form.number_field :currently_listed, id: :estimate_currently_listed %>
+    <p> Is you're home currently listed? </p>
+    <%= form.radio_button :currently_listed, 'listed' %>
+    <%= form.label :currently_listed, 'Yes' %>
+
+    <%= form.radio_button :currently_listed, 'unlisted' %>
+    <%= form.label :currently_listed, 'No' %>
   </div>
 
   <div class="field">
