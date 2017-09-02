@@ -3,25 +3,22 @@ Grant Barlow
 
 - X Estimates Resources
   - X Enum (:new, :contacted)
-- Appointments Resources 
+- X Appointments Resources 
   - X Name=string, phone=string, Street=string, city=string, state=string
   - X Enum (:new, :contacted)
-  - Complete CRUD
+  - X Complete CRUD
 - X Static Pages Controller
-- Twilio Text Message on Request
-- Devise
-- Petergate
-- Adminstrate
 
 <hr>
 
+- Bootstrap
 - Home Page
   - Background House
   - 2 simple buttons
     - Free Estimate
     - Set Appointment
   - Carousel (photo+string)
-  - Nav (top-right)
+  - Nav (top-right) Shared
 - About Us
   - 3 columns
   - 2 columns = BG pic
@@ -35,8 +32,14 @@ Grant Barlow
   - Mimic Zhome
   - Invisible Captcha
   - Best call time
+<hr>
 
+- Devise
+- Petergate
+- Adminstrate
+- Twilio Text Message on Request
 
+<hr>
 ## ~~ TODO ~~
 
 

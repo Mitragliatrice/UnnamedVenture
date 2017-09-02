@@ -1,2 +1,19 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<%= image_tag('homebg.jpg', id: 'home-background') %>
+<div class="container">
+  <div class="homepage">
+    <%= render 'shared/nav_mobile' %>
+    <%= render 'shared/nav' %>
+
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-2 btn btn-success home-btn">Estimate</div>
+      <div class="col-md-2 btn btn-success home-btn">Appointment</div>
+      <div class="col-md-4"></div>
+    </div>
+    <%= render 'shared/footer' %>
+  </div>
+  </div>
+
+
+

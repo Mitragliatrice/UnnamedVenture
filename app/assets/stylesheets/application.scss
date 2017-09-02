@@ -1,0 +1,41 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "static_pages.scss";
+@import "appointments.scss";
+@import "estimates.scss";
+
+
+// Global
+
+
+
+
+
+
+
+
+
+
+
+
+// Mobile
+
+// // Ipad Pro and Laptops
+@media (max-width: 1024px){
+  
+}
+
+// // Ipad size tablets
+@media (max-width: 768px){
+
+}
+
+// // Larger Phones (iPhone 6 Plus, Nexus 6P)
+@media (max-width: 414px){
+  
+}
+
+// // Smaller Phones
+@media (max-width: 320px){
+  
+}
