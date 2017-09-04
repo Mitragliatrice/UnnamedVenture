@@ -1,5 +1,6 @@
 class EstimatesController < ApplicationController
   before_action :set_estimate, only: [:show, :edit, :update, :destroy]
+  invisible_captcha only: [:create, :update], honeypot: :subtitle
   access all: [:new, :create], admin: :all
 
   # GET /estimates
@@ -8,6 +9,9 @@ class EstimatesController < ApplicationController
     @estimates = Estimate.all
   end
 
+  def spam
+    redirect_to root_path
+  end
   # GET /estimates/1
   # GET /estimates/1.json
   def show
@@ -90,6 +94,8 @@ class EstimatesController < ApplicationController
                                       :damage, 
                                       :photo, 
                                       :tod_call, 
-                                      :status)
+                                      :status,
+                                      :subtitle
+                                      )
     end
 end

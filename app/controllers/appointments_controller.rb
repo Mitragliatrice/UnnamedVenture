@@ -1,10 +1,15 @@
 class AppointmentsController < ApplicationController
   before_action :find_appointment, only: [:show, :destroy]
+  invisible_captcha only: [:create, :update], honeypot: :subtitle
   access all: [:new, :create], admin: :all
 
 
   def index
     @appointments = Appointment.all
+  end
+
+  def spam
+    redirect_to root_path
   end
 
   def new
@@ -42,7 +47,8 @@ class AppointmentsController < ApplicationController
                                         :street,
                                         :city,
                                         :state,
-                                        :status
+                                        :status,
+                                        :subtitle
     )
   end
 end

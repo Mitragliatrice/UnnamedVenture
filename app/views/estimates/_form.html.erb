@@ -1,5 +1,6 @@
 <div class="estimate-form">
 <%= form_with(model: estimate, local: true) do |form| %>
+<%= form.invisible_captcha :subtitle %>
   <% if estimate.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(estimate.errors.count, "error") %> prohibited this estimate from being saved:</h2>
@@ -119,18 +120,14 @@
     <%= form.label :damage, "List any damage you are aware of." %>
     <%= form.text_area :damage, class: "form-control" %>
   </div>
-<!-- TODO -->
-  <div class="form-group">
-    <%= form.label :photo %>
-    <%= form.text_area :photo, class: "form-control" %>
-  </div>
-<!-- TODO -->
   <div class="form-group">
     <%= form.label :tod_call, 'What is the best time of day to call?' %>
     <%= form.text_area :tod_call, class: "form-control" %>
   </div>
-
-  <div class="actions">
+    <label class="btn btn-primary btn-block">
+     Upload an image of your home. <%= form.file_field :photo, style: 'display:none' %>
+    </label>
+  <div class="actions", style="margin: 15px;">
     <%= form.submit "Get Your Free Estimate", class: "btn btn-success btn-block" %>
  
 </div>

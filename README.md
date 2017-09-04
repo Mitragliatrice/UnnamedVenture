@@ -12,7 +12,7 @@ Grant Barlow
 <hr>
 
 - X Bootstrap
-- Home Page
+- X Home Page
   - X Background House
   - X 2 simple buttons
     - X Free Estimate
@@ -23,23 +23,26 @@ Grant Barlow
   - X 3 columns
   - X 2 columns = BG pic
   - X 1 column = contact data
-- How it Works!
+- X How it Works!
   - X background photo
-  - semi transparent card with content
+  - X semi transparent card with content
 - X Contact Us
   - X Like about us with columsn and content.
 - Request an Estimate
   - X Mimic Zhome
-  - Invisible Captcha
+  - X Invisible Captcha
   - X Best call time
 <hr>
 
 - X Devise
-- Petergate
+- X Petergate
 - Adminstrate
 - Twilio Text Message on Request
 - CarrierWave + AWS
-- Invisible Captcha
+  - X Implimentation
+  - Nested attributes for multple pictures
+  - Drag and Drop
+- X Invisible Captcha
 
 <hr>
 ## ~~ TODO ~~

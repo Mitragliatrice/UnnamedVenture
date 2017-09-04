@@ -1,4 +1,5 @@
 <%= form_with(model: appointment, local: true) do |f| %>
+<%= form.invisible_captcha :subtitle %>
   <% if appointment.errors.any? %>
     <div id="error_explanation">
       <h2>
