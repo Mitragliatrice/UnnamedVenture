@@ -11,33 +11,34 @@ Grant Barlow
 
 <hr>
 
-- Bootstrap
+- X Bootstrap
 - Home Page
-  - Background House
-  - 2 simple buttons
-    - Free Estimate
-    - Set Appointment
-  - Carousel (photo+string)
-  - Nav (top-right) Shared
-- About Us
-  - 3 columns
-  - 2 columns = BG pic
-  - 1 column = contact data
+  - X Background House
+  - X 2 simple buttons
+    - X Free Estimate
+    - X Set Appointment
+  - X Carousel (photo+string)
+  - X Nav (top-right) Shared
+- X About Us
+  - X 3 columns
+  - X 2 columns = BG pic
+  - X 1 column = contact data
 - How it Works!
-  - background photo
+  - X background photo
   - semi transparent card with content
-- Contact Us
-  - Like about us with columsn and content.
+- X Contact Us
+  - X Like about us with columsn and content.
 - Request an Estimate
-  - Mimic Zhome
+  - X Mimic Zhome
   - Invisible Captcha
-  - Best call time
+  - X Best call time
 <hr>
 
-- Devise
+- X Devise
 - Petergate
 - Adminstrate
 - Twilio Text Message on Request
+- CarrierWave + AWS
 
 <hr>
 ## ~~ TODO ~~
