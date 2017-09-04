@@ -1,5 +1,6 @@
 class EstimatesController < ApplicationController
   before_action :set_estimate, only: [:show, :edit, :update, :destroy]
+  access all: [:new, :create], admin: :all
 
   # GET /estimates
   # GET /estimates.json
@@ -28,7 +29,7 @@ class EstimatesController < ApplicationController
 
     respond_to do |format|
       if @estimate.save
-        format.html { redirect_to @estimate, notice: 'Estimate was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Estimate was successfully created.' }
         format.json { render :show, status: :created, location: @estimate }
       else
         format.html { render :new }

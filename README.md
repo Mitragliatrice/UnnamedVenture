@@ -39,6 +39,7 @@ Grant Barlow
 - Adminstrate
 - Twilio Text Message on Request
 - CarrierWave + AWS
+- Invisible Captcha
 
 <hr>
 ## ~~ TODO ~~

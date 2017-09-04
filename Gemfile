@@ -58,3 +58,7 @@ gem 'devise', '~> 4.3'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'petergate', '~> 1.7', '>= 1.7.5'
+gem 'invisible_captcha', '~> 0.9.3'
+gem 'twilio-ruby', '~> 5.2', '>= 5.2.1'
+gem 'carrierwave-aws', '~> 1.2'

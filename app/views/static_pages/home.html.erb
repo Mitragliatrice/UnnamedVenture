@@ -4,8 +4,8 @@
     <%= render 'home_carousel' %>
     <div class="row">
       <div class="col-md-4"></div>
-      <div class="col-md-2 btn btn-default home-btn btn-lg"><%= link_to "Request an Estimate", new_estimate_path %></div>
-      <div class="col-md-2 btn btn-default home-btn btn-lg"><%= link_to "Set an Appointment", new_appointment_path %></div>
+      <div class="col-md-2"><%= link_to "Request an Estimate", new_estimate_path, class: "btn btn-default home-btn btn-lg btn-block" %></div>
+      <div class="col-md-2"><%= link_to "Set an Appointment", new_appointment_path, class: " btn btn-default home-btn btn-lg btn-block" %></div>
       <div class="col-md-4"></div>
     </div>
     <%= render 'shared/footer' %>

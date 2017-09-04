@@ -1,5 +1,6 @@
 class AppointmentsController < ApplicationController
   before_action :find_appointment, only: [:show, :destroy]
+  access all: [:new, :create], admin: :all
 
 
   def index
@@ -18,7 +19,7 @@ class AppointmentsController < ApplicationController
     
     respond_to do |format|
       if @appointment.save
-        format.html { redirect_to @appointment, notice: 'Estimate was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Estimate was successfully created.' }
       else
         format.html { render :new }
       end
