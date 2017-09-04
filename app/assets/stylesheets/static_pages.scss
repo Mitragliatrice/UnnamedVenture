@@ -16,9 +16,69 @@
 
 .home-btn {
   position: static;
+  margin: 50px 15px;
+}
+
+.home-btn a {
+  color: black;
+}
+
+.carousel-inner > .carousel-item > img, 
+.carousel-inner > .carousel-item > a > img{
+width: auto;
+margin: auto;
+}
+// About Us
+
+.about-us-rest{
+
+}
+
+#about-img {
+  width: 100%;
+  height: auto;
+  margin-top: -48px;
+  filter: grayscale(1);
+    -webkit-filter: grayscale(1); 
 }
 
 
+.about-us-txt{
+  padding-top: 100px;
+}
+
+// Contact US
+
+.contact-us-txt {
+  padding-top: 100px;
+}
+
+.contact-us-rest {
+
+}
+
+#contact-img {
+  width: 100%;
+  height: auto;
+  margin-top: -48px;
+  filter: grayscale(1);
+    -webkit-filter: grayscale(1); 
+}
+
+// How it works
+
+#work-img {
+  position: fixed;
+  top: 53.45%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  filter: grayscale(2);
+    -webkit-filter: grayscale(2);
+}
 
 
 

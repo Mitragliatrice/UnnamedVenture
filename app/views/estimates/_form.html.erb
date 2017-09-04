@@ -1,3 +1,4 @@
+<div class="estimate-form">
 <%= form_with(model: estimate, local: true) do |form| %>
   <% if estimate.errors.any? %>
     <div id="error_explanation">
@@ -11,116 +12,127 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <p> Is you're home currently listed? </p>
+  <div class="form-check">
+    <p> Is you're home currently listed for sale? </p>
     <%= form.radio_button :currently_listed, 'listed' %>
     <%= form.label :currently_listed, 'Yes' %>
 
     <%= form.radio_button :currently_listed, 'unlisted' %>
     <%= form.label :currently_listed, 'No' %>
   </div>
-
-  <div class="field">
-    <%= form.label :prop_owner_name %>
-    <%= form.text_field :prop_owner_name, id: :estimate_prop_owner_name %>
+<div class="row">
+  <div class="col-md-6">
+  <div class="form-group">
+    <%= form.label :prop_owner_name, "Property Owner" %>
+    <%= form.text_field :prop_owner_name, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :contact_name %>
-    <%= form.text_field :contact_name, id: :estimate_contact_name %>
+  <div class="form-group">
+    <%= form.label :contact_name, "Contact Name" %>
+    <%= form.text_field :contact_name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :estimate_email %>
+    <%= form.text_field :email, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :phone %>
-    <%= form.text_field :phone, id: :estimate_phone %>
+    <%= form.text_field :phone, class: "form-control" %>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+    <%= form.label :street, "Street Address" %>
+    <%= form.text_field :street, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :street %>
-    <%= form.text_field :street, id: :estimate_street %>
+  <div class="form-group">
+    <%= form.label :street2, "Street Address 2" %>
+    <%= form.text_field :street2, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :street2 %>
-    <%= form.text_field :street2, id: :estimate_street2 %>
-  </div>
-
-  <div class="field">
+  <div class="form-group">
     <%= form.label :city %>
-    <%= form.text_field :city, id: :estimate_city %>
+    <%= form.text_field :city, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :state %>
-    <%= form.text_field :state, id: :estimate_state %>
+    <%= form.text_field :state, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :zip %>
-    <%= form.text_field :zip, id: :estimate_zip %>
+    <%= form.text_field :zip, class: "form-control" %>
+  </div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-6">
+  <div class="form-group">
+    <%= form.label :beds, "How many bedrooms are there?" %>
+    <%= form.text_field :beds, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :beds %>
-    <%= form.text_field :beds, id: :estimate_beds %>
+  <div class="form-group">
+    <%= form.label :baths, "How many bathrooms are there?" %>
+    <%= form.text_field :baths, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :baths %>
-    <%= form.text_field :baths, id: :estimate_baths %>
+  <div class="form-group">
+    <%= form.label :home_sf, "What is the square-footage of the home?" %>
+    <%= form.text_field :home_sf, class: "form-control" %>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+    <%= form.label :prop_sf, "What is the square-footage of the property?" %>
+    <%= form.text_field :prop_sf, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :home_sf %>
-    <%= form.text_field :home_sf, id: :estimate_home_sf %>
+  <div class="form-group">
+    <%= form.label :num_garages, "How many garages does the home have?" %>
+    <%= form.text_field :num_garages, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :prop_sf %>
-    <%= form.text_field :prop_sf, id: :estimate_prop_sf %>
+  <div class="form-group">
+    <%= form.label :pool, "Does it have a pool?" %>
+    <%= form.text_field :pool, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :num_garages %>
-    <%= form.text_field :num_garages, id: :estimate_num_garages %>
+  <div class="form-group">
+    <%= form.label :spa, "Does it have a spa?" %>
+    <%= form.text_field :spa, class: "form-control" %>
+  </div>
+</div>
+</div>
+<hr>
+  <div class="form-group">
+    <%= form.label :upgrades, "List any upgrades done the home or property." %>
+    <%= form.text_area :upgrades, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :pool %>
-    <%= form.text_field :pool, id: :estimate_pool %>
+  <div class="form-group">
+    <%= form.label :damage, "List any damage you are aware of." %>
+    <%= form.text_area :damage, class: "form-control" %>
   </div>
-
-  <div class="field">
-    <%= form.label :spa %>
-    <%= form.text_field :spa, id: :estimate_spa %>
-  </div>
-
-  <div class="field">
-    <%= form.label :upgrades %>
-    <%= form.text_area :upgrades, id: :estimate_upgrades %>
-  </div>
-
-  <div class="field">
-    <%= form.label :damage %>
-    <%= form.text_area :damage, id: :estimate_damage %>
-  </div>
-
-  <div class="field">
+<!-- TODO -->
+  <div class="form-group">
     <%= form.label :photo %>
-    <%= form.text_area :photo, id: :estimate_photo %>
+    <%= form.text_area :photo, class: "form-control" %>
   </div>
-
-  <div class="field">
-    <%= form.label :tod_call %>
-    <%= form.text_area :tod_call, id: :estimate_tod_call %>
+<!-- TODO -->
+  <div class="form-group">
+    <%= form.label :tod_call, 'What is the best time of day to call?' %>
+    <%= form.text_area :tod_call, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
-  </div>
+    <%= form.submit "Get Your Free Estimate", class: "btn btn-success btn-block" %>
+ 
+</div>
 <% end %>
+</div>

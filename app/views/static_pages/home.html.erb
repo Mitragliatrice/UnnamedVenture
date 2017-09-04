@@ -1,19 +1,16 @@
 
 <%= image_tag('homebg.jpg', id: 'home-background') %>
-<div class="container">
   <div class="homepage">
-    <%= render 'shared/nav_mobile' %>
-    <%= render 'shared/nav' %>
-
+    <%= render 'home_carousel' %>
     <div class="row">
       <div class="col-md-4"></div>
-      <div class="col-md-2 btn btn-success home-btn">Estimate</div>
-      <div class="col-md-2 btn btn-success home-btn">Appointment</div>
+      <div class="col-md-2 btn btn-default home-btn btn-lg"><%= link_to "Request an Estimate", new_estimate_path %></div>
+      <div class="col-md-2 btn btn-default home-btn btn-lg"><%= link_to "Set an Appointment", new_appointment_path %></div>
       <div class="col-md-4"></div>
     </div>
     <%= render 'shared/footer' %>
   </div>
-  </div>
+
 
 
 
