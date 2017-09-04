@@ -32,6 +32,7 @@ Grant Barlow
   - X Mimic Zhome
   - X Invisible Captcha
   - X Best call time
+
 <hr>
 
 - X Devise
@@ -45,15 +46,12 @@ Grant Barlow
 - X Invisible Captcha
 
 <hr>
+
 ## ~~ TODO ~~
 
-
-
-
-
+  - validations on forms
 
 <hr>
-
 
 ### Future Site Features
 - Impliment Core Logic's "RealQuest" API
