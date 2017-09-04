@@ -1,3 +1,3 @@
 <div>
-  <%= link_to 'Admin Sign In', new_user_session_path, class: 'fixed-bottom log-in' %>   
+  <%= link_to 'Admin Sign In', new_user_session_path, class: 'fixed-bottom log-in' if user_signed_in? == false %>    
 </div>

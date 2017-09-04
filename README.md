@@ -36,7 +36,7 @@ Grant Barlow
 
 - X Devise
 - X Petergate
-- Adminstrate
+- X Adminstrate
 - Twilio Text Message on Request
 - CarrierWave + AWS
   - X Implimentation
