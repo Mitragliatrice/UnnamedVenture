@@ -50,6 +50,7 @@ Grant Barlow
 ## ~~ TODO ~~
 
   - validations on forms
+  - Check authroization for indecies and other pages not needed due to administrate
 
 <hr>
 
