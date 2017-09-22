@@ -48,12 +48,23 @@ Grant Barlow
 <hr>
 
 ## ~~ TODO ~~
-
+  - buttons- spread more, more square, dropshadow
+  - form pages, add route to set an appt from each page. (I'd rather talk to someone: set an appointment.) progress bar
+  - fix appointment form page
   - validations on forms
-  - Check authroization for indecies and other pages not needed due to administrate
-
+      - name, number, address
+  - Check authorization for indices and other pages not needed due to administrate
+### Future Site Features
+- Implement Core Logic's "RealQuest" API
+- Give a real time estimate.
 <hr>
 
-### Future Site Features
-- Impliment Core Logic's "RealQuest" API
-- Give a realtime estimate.
+# Discuss with Grant
+- Content
+  - Font
+  - Photos
+  - 'About Us' text
+  - 'How it Works' text
+  - 'Contact Us' text.
+  - homepage carousel
+  - carousel arrows more visible (Mobile version = swipe(version2))

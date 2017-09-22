@@ -1,22 +1,25 @@
 // Home Page
 #home-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  background-color: black;
-  filter: grayscale(2);
-    -webkit-filter: grayscale(2);
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // width: 100%;
+  // height: auto;
+  // z-index: -100;
+  // -webkit-transform: translateX(-50%) translateY(-50%);
+  // transform: translateX(-50%) translateY(-50%);
+  // background-size: cover;
+  background-color: #D2D7E3;
+  // filter: blur(2px) grayscale(2);
+  //   -webkit-filter: blur(2px) grayscale(2);
 }
 
 .home-btn {
+  background-color: rgba(254, 185, 91, 0.8);
+  white-space: normal;
   position: static;
   margin: 50px 15px;
+  filter: drop-shadow(2px 2px 2px)
 }
 
 .home-btn a {
@@ -44,7 +47,8 @@ margin: auto;
 
 
 .about-us-txt{
-  padding-top: 100px;
+margin-top: -20px;
+font-size: .95em;
 }
 
 // Contact US
@@ -81,11 +85,13 @@ margin: auto;
 }
 
 .works-card {
-  background-color: rgba(255,255,255, .85)
+  background-color: rgba(255,255,255, .85);
+  margin-top: -60px;
+  font-size: .9em;
 }
 
 .works-text{
-  margin: 15px;
+  margin: 5px 15px 15px 15px;
 }
 
 
