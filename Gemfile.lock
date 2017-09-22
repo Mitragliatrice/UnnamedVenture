@@ -115,6 +115,8 @@ GEM
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
@@ -288,6 +290,7 @@ DEPENDENCIES
   devise (~> 4.3)
   dotenv-rails (~> 2.2, >= 2.2.1)
   factory_girl_rails (~> 4.8)
+  font-awesome-sass
   invisible_captcha (~> 0.9.3)
   jbuilder (~> 2.5)
   jquery-ui-rails (~> 6.0, >= 6.0.1)

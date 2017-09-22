@@ -1,12 +1,31 @@
 
-<ul class="nav justify-content-end">
-  <li><%= link_to 'Home', root_path, class: "active? root_path nav-item" %></li>
-  <li><%= link_to 'About Us', about_us_path, class: "active?(about_us_path) nav-item" %></li>
-  <li><%= link_to 'How it Works', how_it_works_path, class: "active?(how_it_works_path) nav-item" %></li>
-  <li><%= link_to 'Contact Us', contact_us_path, class: "active?(contact_us_path) nav-item" %></li>
-  <li><%= link_to 'Request an Estimate', new_estimate_path, class: "active? new_estimate_path nav-item" %></li>
-  <li><%= link_to 'Admin Dashboard', admin_users_path, class: "active? admin_users_path nav-item" if admin? %></li>
-  <li><%= link_to 'Admin Sign out', destroy_user_session_path, method: :delete if admin? %></li>
-  
-</ul>
+<div class="">
+  <span class="h1" , class="navbar-brand mb-0">HouZeSell</span>
+  <ul class="nav justify-content-end">
+
+    <li>
+      <%= link_to 'Home', root_path, class: "active? root_path nav-item" %>
+    </li>
+    <li>
+      <%= link_to 'About Us', about_us_path, class: "active?(about_us_path) nav-item" %>
+    </li>
+    <li>
+      <%= link_to 'How it Works', how_it_works_path, class: "active?(how_it_works_path) nav-item" %>
+    </li>
+    <li>
+      <%= link_to 'Contact Us', contact_us_path, class: "active?(contact_us_path) nav-item" %>
+    </li>
+    <li>
+      <%= link_to 'Request an Estimate', new_estimate_path, class: "active? new_estimate_path nav-item" %>
+    </li>
+    <li>
+      <%= link_to 'Admin Dashboard', admin_users_path, class: "active? admin_users_path nav-item" if admin? %>
+    </li>
+    <li>
+      <%= link_to 'Admin Sign out', destroy_user_session_path, method: :delete if admin? %>
+    </li>
+
+  </ul>
+</div>
+
 
