@@ -89,13 +89,13 @@ font-size: .95em;
 
 #work-img {
   position: fixed;
-  top: 56.5%;
-  left: 50%;
+  // top: 50%;
+  // left: 50%;
   width: 100%;
   height: auto;
   z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  // -webkit-transform: translateX(-50%) translateY(-50%);
+  // transform: translateX(-50%) translateY(-50%);
   filter: grayscale(2);
     -webkit-filter: grayscale(2);
 }
