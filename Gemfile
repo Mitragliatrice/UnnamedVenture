@@ -65,3 +65,5 @@ gem 'carrierwave-aws', '~> 1.2'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'administrate', '~> 0.8.1'
 gem 'font-awesome-sass'
+
+ruby "2.4.0"
