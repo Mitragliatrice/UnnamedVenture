@@ -48,9 +48,8 @@ Grant Barlow
 <hr>
 
 ## ~~ TODO ~~
-  - buttons- spread more, more square, dropshadow
-  - form pages, add route to set an appt from each page. (I'd rather talk to someone: set an appointment.) progress bar
-  - fix appointment form page
+  -  X buttons- spread more, more square, dropshadow
+  - X fix appointment form page
   - validations on forms
       - name, number, address
   - Check authorization for indices and other pages not needed due to administrate
@@ -61,10 +60,32 @@ Grant Barlow
 
 # Discuss with Grant
 - Content
-  - Font
-  - Photos
-  - 'About Us' text
-  - 'How it Works' text
-  - 'Contact Us' text.
-  - homepage carousel
-  - carousel arrows more visible (Mobile version = swipe(version2))
+  - X Font
+  - X Photos
+  - X 'About Us' text
+  - X 'How it Works' text
+  - X 'Contact Us' text.
+  - X homepage carousel
+  - X carousel arrows more visible (Mobile version = swipe(version2))
+
+
+HOME PAGE
+  - X HouZsell (NO 'E')
+  - X Instant Offer (Nav and Home Btn)
+
+REQUEST AN ESTIMATE PAGE 
+
+  Instate Offer
+  - X Kill Spa
+
+  - X How many car garage. (ask Grant)
+
+  - X instead of upgrades put (List any improvements made to the property in the last 10 years.)
+
+  - What is best method/time to contact you. New table with date (calendar drop down), and morning, afternoon, evening. owned by the appointment or estimate.
+
+  - 'Any' Images "Optional" (Ability to do more than one) Smaller, and not next to the bottom button.
+
+  - X Receive "no obligation offer" (Larger 'Home btn color',  Page Button, Arrows pointing in)
+
+  - Carasoul Images --- Up for debate still. I need a picture of a "run down kitchen." 

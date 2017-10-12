@@ -26,6 +26,10 @@
   color: black;
 }
 
+.home-btn-offer {
+  padding: 22px;
+}
+
 .carousel-inner > .carousel-item > img, 
 .carousel-inner > .carousel-item > a > img{
 width: auto;
@@ -82,8 +86,8 @@ font-size: .95em;
   width: 100%;
   height: auto;
   margin-top: -48px;
-  filter: grayscale(1);
-    -webkit-filter: grayscale(1); 
+  // filter: grayscale(1);
+  //   -webkit-filter: grayscale(1); 
 }
 
 // How it works
@@ -92,7 +96,7 @@ font-size: .95em;
   position: fixed;
   // top: 50%;
   // left: 50%;
-  width: 100%;
+  // width: 100%;
   height: auto;
   z-index: -100;
   // -webkit-transform: translateX(-50%) translateY(-50%);

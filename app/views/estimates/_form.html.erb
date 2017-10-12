@@ -22,7 +22,9 @@
     <%= form.label :currently_listed, 'No' %>
   </div>
 <div class="row">
+
   <div class="col-md-6">
+    
   <div class="form-group">
     <%= form.label :prop_owner_name, "Property Owner" %>
     <%= form.text_field :prop_owner_name, class: "form-control" %>
@@ -42,6 +44,9 @@
     <%= form.label :phone %>
     <%= form.text_field :phone, class: "form-control" %>
   </div>
+        <label class="btn btn-default btn-block" style="margin-top: 40px;">
+     Upload an image of your home. <%= form.file_field :photo, style: 'display:none' %>
+    </label>
 </div>
 <div class="col-md-6">
   <div class="form-group">
@@ -68,6 +73,7 @@
     <%= form.label :zip %>
     <%= form.text_field :zip, class: "form-control" %>
   </div>
+  
 </div>
 </div>
 <hr>
@@ -90,12 +96,12 @@
 </div>
 <div class="col-md-6">
   <div class="form-group">
-    <%= form.label :prop_sf, "What is the square-footage of the property?" %>
+    <%= form.label :prop_sf, "What is the square-footage of the lot?" %>
     <%= form.text_field :prop_sf, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= form.label :num_garages, "How many garages does the home have?" %>
+    <%= form.label :num_garages, "How many car garage does the home have?" %>
     <%= form.text_field :num_garages, class: "form-control" %>
   </div>
 
@@ -103,16 +109,11 @@
     <%= form.label :pool, "Does it have a pool?" %>
     <%= form.text_field :pool, class: "form-control" %>
   </div>
-
-  <div class="form-group">
-    <%= form.label :spa, "Does it have a spa?" %>
-    <%= form.text_field :spa, class: "form-control" %>
-  </div>
 </div>
 </div>
 <hr>
   <div class="form-group">
-    <%= form.label :upgrades, "List any upgrades done the home or property." %>
+    <%= form.label :upgrades, "List any improvements made to the property in the last 10 years." %>
     <%= form.text_area :upgrades, class: "form-control" %>
   </div>
 
@@ -124,12 +125,15 @@
     <%= form.label :tod_call, 'What is the best time of day to call?' %>
     <%= form.text_area :tod_call, class: "form-control" %>
   </div>
-    <label class="btn btn-primary btn-block">
-     Upload an image of your home. <%= form.file_field :photo, style: 'display:none' %>
-    </label>
+
   <div class="actions", style="margin: 15px;">
-    <%= form.submit "Get Your Free Estimate", class: "btn btn-success btn-block" %>
+    <%= form.submit "Receive Your No Obligation Offer", class: "btn btn-success btn-block btn-lg offer-btn" %>
  
+  </div>
+<div>
+  <p>In a hurry?
+  <%= link_to "Schedule an Appointment", new_appointment_path %>
+  </p>
 </div>
-<% end %>
+  <% end %>
 </div>
