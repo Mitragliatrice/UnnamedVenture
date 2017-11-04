@@ -22,6 +22,7 @@ body {
 
 .nav{
   margin-bottom: 50px;
+  margin-left: 100px;
   padding-right: 100px;
   background-color: rgba(172, 173, 188, 0);
 }
@@ -29,8 +30,8 @@ body {
 .nav  a {
   color: #000000;
   margin-left: 5px;
-      color: white !important;
-    background-color: #C5C3C3 !important;
+      color: white ;
+    background-color: #C5C3C3 ;
     border-radius: 5px;
 }
 .nav  a:hover {
@@ -39,10 +40,15 @@ body {
   border-radius: 5px;
 }
 
-.active a{
-    color: white !important;
-    background-color: #B3B3B3 !important;
+.active{
+    color: black !important;
+    background-color: rgb(241, 91, 47) !important;
     border-radius: 5px;
+}
+
+#logo {
+  width: 400px;
+  margin-bottom: -20px;
 }
 
 // Footer

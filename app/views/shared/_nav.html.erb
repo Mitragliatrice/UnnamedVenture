@@ -1,25 +1,24 @@
 
-<div class="">
-  <span class="h1" , class="navbar-brand mb-0">HouZsell</span>
-  <ul class="nav nav-pills justify-content-end">
-
+<div>
+  <%= link_to image_tag('Houzell_logo.png', id: 'logo'), root_path %>
+  <ul class="nav nav-pills justify-content-center">
     <li>
-      <%= link_to 'Home', root_path, class: "active? root_path nav-item" %>
+      <%= link_to 'Home', root_path, class: "#{active?(root_path)} nav-item" %>
     </li>
     <li>
-      <%= link_to 'About Us', about_us_path, class: "active?(about_us_path) nav-item" %>
+      <%= link_to 'About Us', about_us_path, class: "#{active?(about_us_path)} nav-item" %>
     </li>
     <li>
-      <%= link_to 'How it Works', how_it_works_path, class: "active?(how_it_works_path) nav-item" %>
+      <%= link_to 'How it Works', how_it_works_path, class: "#{active?(how_it_works_path)} nav-item" %>
     </li>
     <li>
-      <%= link_to 'Contact Us', contact_us_path, class: "active?(contact_us_path) nav-item" %>
+      <%= link_to 'Contact Us', contact_us_path, class: "#{active?(contact_us_path)} nav-item" %>
     </li>
     <li>
-      <%= link_to 'Request an Instant Offer', new_estimate_path, class: "active? new_estimate_path nav-item" %>
+      <%= link_to 'Request an Instant Offer', new_estimate_path, class: "#{active? new_estimate_path} nav-item" %>
     </li>
     <li>
-      <%= link_to 'Admin Dashboard', admin_users_path, class: "active? admin_users_path nav-item" if admin? %>
+      <%= link_to 'Admin Dashboard', admin_users_path, class: "#{active? admin_users_path} nav-item" if admin? %>
     </li>
     <li>
       <%= link_to 'Admin Sign out', destroy_user_session_path, method: :delete if admin? %>
