@@ -16,7 +16,9 @@ font-family: 'Montserrat', sans-serif;
 body {
   padding-bottom: 0px;
   font-family: 'Raleway', sans-serif;
+  background-color: #E2E2E2;
 }
+
 
 // Nav
 
@@ -40,7 +42,7 @@ body {
   border-radius: 5px;
 }
 
-.active{
+.nav .active{
     color: black !important;
     background-color: rgb(241, 91, 47) !important;
     border-radius: 5px;
